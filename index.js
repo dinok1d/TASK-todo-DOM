@@ -10,7 +10,7 @@ tasks = [
   { id: 0, title: "Game of thrones", category: "Movies", done: false },
   { id: 1, title: "Toy Story 4", category: "Movies", done: false },
 ];
-
+console.log(tasks)
 categories = ["Movies", "Groceries"];
 // SAMPLE
 renderCategories(categories, CATEGORY_SELECTOR);
