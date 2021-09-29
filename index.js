@@ -1,4 +1,4 @@
-const { values } = require("core-js/core/array");
+// const { values } = require("core-js/core/array");
 
 // You do not need to change the constants
 const CATEGORY_SELECTOR = "categories-list";
@@ -30,7 +30,7 @@ function taskChecked(taskId, checked) {
   // // You are given the task id
 
   // tasks.forEach((id) => {
-  //   id = !!false;
+  //   id = true;
   // });
 
   console.log(checked);
