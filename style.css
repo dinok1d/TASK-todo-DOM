@@ -121,6 +121,7 @@ button:hover {
 .item-category {
   font-size: 12px;
   color: #59595c;
+  text-align: left;
 }
 
 .item-title {
