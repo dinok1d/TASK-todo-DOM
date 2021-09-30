@@ -67,8 +67,3 @@ function filterTasks() {
   // REMOVE ME: sample alert
   alert(`Category: ${selectedCategory} | done: ${done}`);
 }
-
-// function idIncrement() {
-//   if taskTitle()
-//   return id + 1;
-// }

@@ -7,39 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class = titleDiv>
+        <h1>My To-Do List</h1>
+        <br/>
+        <hr/>
+    </div>
 
-    <div>
-        <h1>Create your task </h1>
+    <div class="CreateCatergoryDiv">
+        <h1>Create Category </h1>
+        <input type="text" name="new-category" id="new-category" placeholder=" e.g. Groceries ">
+        <button onclick="addCategory()"> + </button>
+    </div>
+    <div class ="AddTaskDiv">
+        <h1>Add Task </h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
         <select id="categories-list" title="All">
         </select>
 
-        <input type="text" name="new-task" id="new-task" placeholder="* Add a new task">
-        <button onclick="addTask()"> enter </button>
-    </div>
-
-    <div>
-        <h1>Create your category </h1>
-        <input type="text" name="new-category" id="new-category" placeholder="* Add a new category">
-        <button onclick="addCategory()"> enter </button>
+        <input type="text" name="new-task" id="new-task" placeholder=" add a new task">
+        <button onclick="addTask()"> + </button>
     </div>
 
     <!-- FILTERING DIV -->
-    <div>
-        <h1>filter by category</h1>
+    <div class = "FilterCategoryDiv" >
+        <h1>Filter by Category</h1>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
         <select id="categories-list-filter" title="All">
         </select>
+        <hr/>
         <!-- DONE for filtering thing -->
         <div>
-            <input type="checkbox" name="done" id="done">
-            <label for="done">Filter by done</label>
+            <input type="checkbox" name="done" id="done" class = "done-checkbox">
+            <label for="done">show done</label>
         </div>
     </div>
-    <hr>
 
     <!-- KEEP THE DIV EMPTY. IT WILL BE FILLED BY JS  -->
     <div id="tasks-list"></div>

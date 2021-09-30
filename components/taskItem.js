@@ -7,6 +7,7 @@ function tasksItemComponent(task) {
               <div class="todo-item">
                 <input 
                   class="task-checkbox" 
+        
                   type="checkbox"
                   ${checked} 
                   onchange="taskChecked(${task.id}, this.checked)"
