@@ -25,12 +25,12 @@
         <button onclick="addCategory()"> + </button>
     </div>
     <div class ="AddTaskDiv">
-        <h3>Add Task </h3>
+        <h3>Add Your Task </h3>
         <!-- KEEP THE SELECT EMPTY. IT WILL BE FILLED BY JS  -->
         <select id="categories-list" title="All">
         </select>
 
-        <input type="text" name="new-task" id="new-task" placeholder=" add a new task">
+        <input type="text" name="new-task" id="new-task" placeholder=" e.g. Buy fruits">
         <button onclick="addTask()"> + </button>
     </div>
 
@@ -41,16 +41,18 @@
         <select id="categories-list-filter" title="All">
         </select>
         <button class = "filter-button" onclick="filterTasks()">filter now</button>
-        <hr/>
+        <button class = "filter-button" onclick="reset()">show all</button>
         <!-- DONE for filtering thing -->
-        <div>
+        <div> <br/>
             <input type="checkbox" name="done" id="done" class = "done-checkbox">
-            <label for="done">show done</label>
+            <label for="done">Show Done</label>
         </div>
+        <br/>
+    <hr/>
     </div>
 
     <!-- KEEP THE DIV EMPTY. IT WILL BE FILLED BY JS  -->
-    <div id="tasks-list"></div>
+    <div class= "listDiv" id="tasks-list"></div>
 
 
 </body>

@@ -66,6 +66,10 @@ button {
   border-radius: 7px;
   padding: 5.5px;
   align-content: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
+  box-shadow: 0px 10px 13px -7px #000000,
+    0px 0px 12px 8px rgba(91, 91, 91, 0.13);
 }
 
 .titleDiv {
@@ -74,6 +78,7 @@ button {
   padding: 10px;
   position: -webkit-sticky;
   position: sticky;
+  width: 50%;
 }
 
 .CreateCatergoryDiv {
@@ -87,6 +92,7 @@ button {
 }
 
 .FilterCategoryDiv {
+  width: 50%;
 }
 
 .filter-button {
@@ -103,7 +109,11 @@ button {
 .item-title {
 }
 
-/* .rounded-checkbox {
+.listDiv {
+  width: 50%;
+}
+
+/* .done-checkbox {
   width: 1.3em;
   height: 1.3em;
   background-color: white;

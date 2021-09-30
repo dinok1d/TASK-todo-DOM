@@ -68,3 +68,7 @@ function filterTasks() {
   // // });
   // renderTasks(done, "tasks-list");
 }
+
+function reset() {
+  renderTasks(tasks, "tasks-list");
+}
