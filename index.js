@@ -59,10 +59,12 @@ function addCategory() {
 function filterTasks() {
   const selectedCategory = getSelectedCategoryById(CATEGORY_FILTER);
   const done = getFilteredDone();
-  filteredtasks = tasks.filter((task) => task.category === selectedCategory);
-  renderTasks(filteredtasks, "tasks-list");
+  filteredTasks = tasks.filter(
+    (task) => task.category === selectedCategory && task.done === done
+  );
+  renderTasks(filteredTasks, "tasks-list");
   // filtereddone = tasks.filter((task) => {
   //   task.done === done;
-  // });
-  renderTasks(done, "tasks-list");
+  // // });
+  // renderTasks(done, "tasks-list");
 }
