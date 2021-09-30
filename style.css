@@ -85,6 +85,10 @@ button {
 .FilterCategoryDiv {
 }
 
+.filter-button {
+  border-radius: 100px;
+}
+
 .item-category {
   font-size: 12px;
   color: #59595c;

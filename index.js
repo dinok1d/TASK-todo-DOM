@@ -26,13 +26,9 @@ renderCategories(categories, CATEGORY_FILTER);
 renderTasks(tasks, "tasks-list");
 
 function taskChecked(taskId, checked) {
-  // id: tasks.length,
-  //   title: taskTitle,
-  //   category: selectedCategory,
-  //   done: false,
   checkedtask = tasks.find((task) => task.id === taskId);
-  checkedtask.done = checked
-  // tasks.forEach(task => task.done === taskId 
+  checkedtask.done = checked;
+  // tasks.forEach(task => task.done === taskId
   renderTasks(tasks, "tasks-list");
   console.log(checked);
   console.log(`${checked ? "" : "UN"}CHECKED TASK`, taskId);
@@ -56,6 +52,7 @@ function addCategory() {
   const newCategory = getNewCategoryText();
   categories.push(newCategory);
   renderCategories(categories, CATEGORY_SELECTOR);
+  renderCategories(categories, CATEGORY_FILTER);
   // alert(`New category was added: ${newCategory}`);
 }
 
@@ -67,5 +64,11 @@ function filterTasks() {
   //   title: taskTitle,
   //   category: selectedCategory,
   //   done: false,
+  // filteredcategory = categories.filter((category) => {
+  //   tasks.category === selectedCategory;
+  // });
+  filteredtasks = tasks.filter((task) => task.category === selectedCategory);
   // Let filteredcategory= obj.filter{(categories)}=> obj.category === CATEGORY_FILTER
-  renderCategories(categories, CATEGORY_FILTER);}
+  // renderCategories(categories, CATEGORY_FILTER);
+  renderTasks(filteredtasks, "tasks-list");
+}
